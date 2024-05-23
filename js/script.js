@@ -93,12 +93,14 @@ const studenti = [
     },
 ];
 
-const nomiStudenti = studenti.map((element) => element.name);
-
+/* const nomiStudenti = studenti.map((element) => element.name); */
+const nomiStudenti = [];
 const votoStudenti = [];
 const idVotoStudenti = [];
 
 studenti.forEach(element => {
+    nomiStudenti.push(element.name);
+
     if (element.grades > 70 && element.id > 120) {
         idVotoStudenti.push(element)
     };
