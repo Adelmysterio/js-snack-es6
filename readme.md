@@ -8,8 +8,10 @@ nome dell'ospite (guestName),
 posto occupato (place),
 Generiamo e stampiamo in console la lista per i segnaposto. -->
 
-creo un array di oggetti ospiti con chiavi tableName guestName e place
-con un ciclo foreach per l array di oggetti stampo i segnaposto
+creo un array di oggetti ospiti con chiavi tableName guestName
+con un ciclo foreach per l array di oggetti 
+    aggiungo chiave place come indice del ciclo 
+stampo i segnaposto
 
 <!-- SNACK 2
 Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
