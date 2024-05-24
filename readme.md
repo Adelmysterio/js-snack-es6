@@ -85,3 +85,12 @@ creo un funzione che generi una lettera casuale generaLetteraRandom
 dichiaro una variabile cardedItems mappo su items
     invoco la fuznione generaLetteraRandom per associare un valore alla chiave card
 
+<!-- BONUS 2
+Stampare in pagina oltre che in console! -->
+
+dichiaro una costante output che selezione nel dom
+creo un ciclo foreach 
+     creo un elemento h2
+     creo un elemento p * 3
+     appendo gli elementi ad output 
+     appendo ai vari elementi il valore delle varie chiavi
