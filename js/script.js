@@ -159,3 +159,46 @@ squadre.forEach(squadra => {
 const nomiEFalli = squadre.map(({ nome, falliSubiti }) => ({ nome, falliSubiti }));
 
 console.log(nomiEFalli);
+
+/* BONUS 1 */
+
+const items = [
+    { name: "Poppy", type: "tshirt", color: "red" },
+    { name: "Jumping", type: "occhiali", color: "blue" },
+    { name: "CrissCross", type: "scarpe", color: "black" },
+    { name: "Jenny", type: "borsa", color: "pink" }
+];
+
+function generaLetteraRandom() {
+    const alfabeto = 'abcdefghilmnopqrstuvz';
+    const randomIndex = Math.floor(Math.random() * alfabeto.length);
+    return alfabeto.charAt(randomIndex);
+}
+
+const cardedItems = items.map((element, i) => {
+return {
+    name: items[i].name,
+    type: items[i].type,
+    color: items[i].color,
+    card: generaLetteraRandom(),
+
+}
+})
+
+console.log(cardedItems)
+
+const output = document.getElementById('output')
+cardedItems.forEach(element => {
+    const nameElement = document.createElement('h2');
+    const typeElement = document.createElement('p');
+    const colorElement = document.createElement('p');
+    const cardElement = document.createElement('p');
+    output.appendChild(nameElement);
+    output.appendChild(typeElement);
+    output.appendChild(colorElement);
+    output.appendChild(cardElement);
+    nameElement.append(element.name);
+    typeElement.append(element.type);
+    colorElement.append(element.color);
+    cardElement.append(element.card.toUpperCase())
+});
