@@ -58,7 +58,7 @@ const votoStudenti = [];
 const idVotoStudenti = [];
 
 studenti.forEach(element => {
-    nomiStudenti.push(element.name);
+    nomiStudenti.push(element.name.toUpperCase());
 
     if (element.grades > 70 && element.id > 120) {
         idVotoStudenti.push(element)
