@@ -42,3 +42,14 @@ creo un ciclo foreach su studenti
      se voto studenti > 70 && id > 120 pusho element in idVotoStudenti
 
 stampo i risultati
+
+<!-- SNACK 3
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare in console la bici con peso minore utilizzando destructuring e template literal -->
+
+creo un array di oggetti arrayBici 
+dichiaro una variabile biciLeggera all'oggetto all'indice 0 di arrayBici
+creo un ciclo foreach per arrayBici
+     se element.peso < biciLeggera.peso allora biciLeggera = element
+stampo in console usando destruring e template literal
