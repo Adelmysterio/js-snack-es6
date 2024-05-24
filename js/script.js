@@ -1,11 +1,12 @@
 /* Snack 1 */
 
-const nominativi = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
+const nominativi = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
 
 const invitati = nominativi.map((element, i) => {
-    return {guestName : nominativi[i],
+    return {
+        guestName: nominativi[i],
         guestTable: 'Tavolo Vip',
-        place: i+1
+        place: i + 1
     }
 });
 
@@ -72,3 +73,60 @@ studenti.forEach(element => {
 console.log(nomiStudenti);
 console.log(votoStudenti);
 console.log(idVotoStudenti);
+
+/* Snack 3  */
+
+const arrayBici = [
+    {
+        nome: "Bici1",
+        peso: 10
+    },
+    {
+        nome: "Bici2",
+        peso: 11
+    },
+    {
+        nome: "Bici3",
+        peso: 5
+    },
+    {
+        nome: "Bici4",
+        peso: 12
+    },
+    {
+        nome: "Bici5",
+        peso: 14
+    },
+    {
+        nome: "Bici6",
+        peso: 11
+    },
+    {
+        nome: "Bici7",
+        peso: 16
+    },
+    {
+        nome: "Bici8",
+        peso: 10
+    },
+    {
+        nome: "Bici9",
+        peso: 9
+    },
+    {
+        nome: "Bici10",
+        peso: 19
+    }
+];
+
+let biciLeggera = arrayBici[0];
+
+arrayBici.forEach(element => {
+    if (element.peso < biciLeggera.peso) {
+        biciLeggera = element
+    }
+});
+
+const {nome, peso} = biciLeggera
+console.log(nome, peso)
+console.log(`${biciLeggera.nome} ${biciLeggera.peso}`)
