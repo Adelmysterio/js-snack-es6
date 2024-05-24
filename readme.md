@@ -66,3 +66,22 @@ creo un ciclo foreach per squadre
      invoco la funzione getRandomInt per associare un valore a punti e falliSubiti
 dichiaro una variabile nomiEFalli e mappo squadre con le chiavi nome, fallisubiti
 stampo nomiEFalli
+
+<!-- BONUS 1: SNACK 5
+Abbiamo questa lista di articoli di moda:
+name        type      color
+Poppy       tshirt    red
+Jumping     occhiali  blue
+CrissCross  scarpe    black
+Jenny       borsa     pink
+Questi articoli sono inseriti in un array di oggetti.
+Dobbiamo attaccare a ognuno un cartellino position con una lettera dell'alfabeto generata casualmente e inserire gli oggetti così modificati in un nuovo array di oggetti. -->
+
+creo un array di oggetti con i dati forniti 
+creo un funzione che generi una lettera casuale generaLetteraRandom
+    dichiaro una const alfabeto con all'interno le lettere dell'alfabeto
+    creo un a const randomIndex
+    return il carattere alla posizione generata dal indice casuale
+dichiaro una variabile cardedItems mappo su items
+    invoco la fuznione generaLetteraRandom per associare un valore alla chiave card
+
