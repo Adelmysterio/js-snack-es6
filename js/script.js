@@ -127,6 +127,35 @@ arrayBici.forEach(element => {
     }
 });
 
-const {nome, peso} = biciLeggera
+const { nome, peso } = biciLeggera
 console.log(nome, peso)
 console.log(`${biciLeggera.nome} ${biciLeggera.peso}`)
+
+/* SNACK 4 */
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+const squadre = [
+    { nome: "Milan", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Inter", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Juve", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Bologna", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Roma", puntiFatti: 0, falliSubiti: 0 }
+];
+
+squadre.forEach(squadra => {
+    squadra.puntiFatti = getRandomInt(0, 100);
+    squadra.falliSubiti = getRandomInt(0, 50);
+});
+
+/*   const nomiEFalli = squadre.map((element, i) => {
+      return{
+          nome: squadre[i].nome,
+          falliSubiti: squadre[i].falliSubiti
+    }
+}); */
+
+const nomiEFalli = squadre.map(({ nome, falliSubiti }) => ({ nome, falliSubiti }));
+
+console.log(nomiEFalli);
